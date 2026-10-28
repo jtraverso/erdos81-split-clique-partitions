@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ErdosPaperIIIChallenge",
+  "solution_module": "ErdosPaperIIISolution",
+  "theorem_names": [
+    "ErdosPaperIII.theorem_1_1",
+    "ErdosPaperIII.corollary_1_2"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

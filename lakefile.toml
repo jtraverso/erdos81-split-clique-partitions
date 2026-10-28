@@ -1,0 +1,35 @@
+name = "erdos81_paper_iii"
+version = "0.1.0"
+defaultTargets = ["PaperIII", "ErdosPaperIIIChallenge", "ErdosPaperIIISolution"]
+requiresModuleSystem = true
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0-rc3"
+
+[[require]]
+name = "nash_williams_paper_i"
+git = "https://github.com/jtraverso/nash-williams-lean"
+rev = "2603197abdbf0a600ec663f6f046f70fbd209d4a"
+
+[[require]]
+name = "asymptotic_triangle_packing"
+git = "https://github.com/jtraverso/asymptotic-triangle-packing"
+rev = "8c687e967e27800dc417203691c46044ec39c248"
+
+[[lean_lib]]
+name = "PaperIII"
+globs = ["PaperIII.+"]
+
+[[lean_lib]]
+name = "ErdosPaperIIIChallenge"
+roots = ["ErdosPaperIIIChallenge"]
+
+[[lean_lib]]
+name = "ErdosPaperIIISolution"
+roots = ["ErdosPaperIIISolution"]
